@@ -1,0 +1,20 @@
+[package]
+name = "runtime-struct-field-names-as-array"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+readme = "README.md"
+description = "Provides a procedural macro that generates an array of the field names of a named struct"
+keywords = ["macro", "proc_macro", "database", "query"]
+homepage = "https://github.com/0cv/runtime_struct_field_names_as_array"
+repository = "https://github.com/0cv/runtime_struct_field_names_as_array"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "^2" }
+quote = "^1.0"
+proc-macro2 = "^1.0"
